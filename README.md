@@ -2,7 +2,7 @@
 ## Overview
 ### Purpose 
 The purpose of this analysis was to build and assess machine learning models, which would be used to evaluate individual customer credit risk. The dataset used to train the models was from LendingClub. I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. Then, I used a combinatorial approach of over- and undersampling using the SMOTEENN algorithm. Next, I compared two new machine learning models that reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. I then evaluated the performance of these models to make a recommendation on which one should be used to predict credit risk. 
-### Results
+## Results
 ### Findings
 In examining the results, I have paid close attention to the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular importance in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row. These rows display an ability to detect high credit risk individuals.
 * Naive Random Oversampling 
