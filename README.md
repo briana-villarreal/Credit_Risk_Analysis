@@ -5,7 +5,7 @@ The purpose of this analysis was to build and assess machine learning models, wh
 ### Results
 ### Findings
 In examining the results, I have paid close attention to the Balanced Accuracy Score as well as the Imbalanced Classification Report (ICR) from each model. Of particular importance in the ICR are two figures from the "f1" (F-score) column - the number from the bottom "avg / total" row, as well as the f-score from the "high risk" row. These rows display an ability to detect high credit risk individuals.
-* Naive Random Undersampling 
+* Naive Random Oversampling 
 ![naive](https://user-images.githubusercontent.com/106560739/194462551-756ffc1b-29e6-4bc4-a376-f86d73285a2a.png)
 This gave a balanced accuracy score of .64. The precision is low for high-risk loans and high for low-risk loans. The racall for high risk was .62 while the recall for low-risk was .65.
 * SMOTE Oversampling
@@ -17,7 +17,7 @@ This gave a balanced accuracy score of .50. The precision was low for high-risk 
 * Combination Under-Over Sampling
 ![combination](https://user-images.githubusercontent.com/106560739/194462597-1c2bf99e-3141-4121-9e65-0d764c98020a.png)
 This gave a balanced accuracy score of .63. The precision was low for high-risk loans and high for low-risk loans. The recall for high-risk was .70 while the recall for low-risk was .57.
-*Balanced Random Forest Classifier
+* Balanced Random Forest Classifier
 ![balanced random](https://user-images.githubusercontent.com/106560739/194462609-d69c948f-3dfc-4430-93c1-a6767cd70a78.png)
 This gave a balanced accuracy score of .78. The precision was low for high-risk loans and high for low-risk loans. The recall for high-risk was .67 while the recall for low-risk was .91.
 * Easy Ensemble AdaBoost Classifier
